@@ -1,0 +1,103 @@
+
+.error-message {
+    color: red;
+    padding: 10px 25px;
+}
+
+.thankyoumessage {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--itemactive-color);
+    width: 50%;
+    box-shadow: 10px 18px 30px var(--menuitem-color);
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form { 
+    width: 65%;
+    margin:50px auto; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-input {
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 22px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  outline:0;
+  border: none;
+}
+
+.feedback-input:active {
+    border: none;
+    outline: 0;
+}
+
+.feedback-input:focus { 
+    border:1px solid var(--itemactive-color);
+ }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+button {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 40%;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:17px;
+  padding: 10px 15px;
+  font-weight:700;
+  border: none;
+  background-color: var(--itemactive-color);
+  color: white;
+}
+
+button:hover {
+    /* box-shadow: 0px 30px 60px var(--menuitem-color); */
+    transition: all 0.4s;
+    color: var(--itemactive-color);
+    background-color: white;
+   
+
+}
+
+.contact > header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px)  {
+.form {
+    width: 80%
+}
+
+.description {
+    padding: 5px 10px;
+}
+
+.contact > header {
+    font-size: 5vW;
+}
+};
+    

@@ -1,0 +1,28 @@
+    .faq-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .faq-item {
+        margin: 20px 35px;
+        padding: 7.5px 30px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--itemactive-color);
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px var(--menuitem-color);
+    }
+
+    .question {
+        font-weight: bold;
+        font-size: 16px;
+    }
+  
+    .answer {
+        font-size: 14px;
+    }

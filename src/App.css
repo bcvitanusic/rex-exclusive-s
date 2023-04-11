@@ -1,0 +1,193 @@
+:root {    
+    --background-gold: #F1EFE7;
+    --menuitem-color: #596773;
+    --menuitemhover-color: #ce796b;
+    /* --itemactive-color: #E7CE74; */
+    --itemactive-color: #fed766;
+    --link-font-size: 1vw;   
+    --link-active-font-size: 1.2vw;
+    --text-font-size: 0.7vw;
+    --text-font-size1300px: 1.3vw;
+    --text-font-size1000px: 3vw;
+    --text-font-size700px: 3.65vw;
+    --text-font-size400px: 4vw;
+}
+
+* {
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+.app { 
+    /* background-image: url('./assets/kuca_izvana.jpeg');
+    background-size: cover;
+    background-position:center; 
+    background-repeat: repeat-y; */
+    min-height: 100svh;
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+} 
+
+.sidebar,
+.content {
+    border-radius: 7.5px;
+    display: table-cell;
+    margin: 10px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.logo-image {
+    width: 90%;
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+hr {
+    text-align: center;
+    margin: auto;
+    background-color: var(--menuitem-color);
+    border: none;
+    width: 90%;
+    height: 1px;
+}
+
+.sidebar {
+    background-color: var(--background-gold); 
+}
+
+.sidebar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.content {
+    background-color: rgba(241, 239, 231, 0.75); 
+    flex: 4; 
+}
+
+ul.nav {
+    list-style-type:none;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0;
+}
+
+.link {
+    text-decoration: none;
+    font-size: var(--link-font-size);
+    font-weight: 800;
+    color: var(--menuitem-color);
+}
+
+.link-active {
+color: var(--itemactive-color);
+text-decoration: none;
+font-weight: bold;
+font-size: var(--link-active-font-size);
+border-bottom: 1px solid var(--itemactive-color);
+}
+
+.link:visited {
+    text-decoration: none;
+    color: var(--menuitem-color);
+}
+
+.link:hover {
+    color: var(--menuitemhover-color);
+}
+
+.sidebar-item {
+    color: var(--menuitem-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar-item:visited {
+    color: var(--menuitem-color);
+}
+
+button {
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .sidebar a {
+        font-size: var(--text-font-size1300px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2.5vw;
+        padding: 15px 0;
+    }
+
+    .sidebar a {
+        font-size: var(--text-font-size1000px);
+    }
+
+    .sidebar, .content {
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar a {font-size: var(--text-font-size700px)}
+    ul.nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2.5vw;
+        padding: 15px 0;
+    }
+    .sidebar,.content {
+        margin:4px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+      .app {
+          display: flex;
+          flex-direction: column;
+      }
+    .sidebar a {
+      text-align: center;
+      font-size: 4vw;
+    }
+
+    .sidebar,.content {
+        margin:2px;
+    }
+  }

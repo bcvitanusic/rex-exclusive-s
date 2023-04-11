@@ -1,0 +1,37 @@
+.contact {
+    width: 100%;
+}
+
+section .description {
+    text-align:center;
+}
+
+.lang {
+    text-align: left;
+}
+
+.maps { 
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.maps > iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    object-fit:fill;
+    border:none;
+    border-radius: 4px;
+}
+
+
+.desc {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
